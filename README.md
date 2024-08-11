@@ -10,6 +10,21 @@ This project is a flashcard learning tool built with React. It features an admin
 - **Flashcard Management**: Admins can view, add, edit, and delete flashcards.
 - **Responsive Design**: The app is designed to be responsive and user-friendly.
 
+## Usage
+
+1. **Login as Admin**:
+
+    - **Email**: `admin@gmail.com`
+    - **Password**: `admin@123`
+
+    Navigate to the login page and use the above credentials to access the admin dashboard.
+
+2. **Manage Flashcards**:
+
+    - **Add Flashcard**: Click on "Add New FlashCard" to display a form where you can enter a question and answer.
+    - **Edit Flashcard**: Click on the "Edit" button on the flashcard to update its question and answer.
+    - **Delete Flashcard**: Click on the "Delete" button on the flashcard to remove it.
+
 ## Installation
 
 1. **Clone the repository**:
@@ -40,21 +55,6 @@ This project is a flashcard learning tool built with React. It features an admin
     ```
 
     This will start the app at `http://localhost:3000`.
-
-## Usage
-
-1. **Login as Admin**:
-
-    - **Email**: `admin@gmail.com`
-    - **Password**: `admin@123`
-
-    Navigate to the login page and use the above credentials to access the admin dashboard.
-
-2. **Manage Flashcards**:
-
-    - **Add Flashcard**: Click on "Add New FlashCard" to display a form where you can enter a question and answer.
-    - **Edit Flashcard**: Click on the "Edit" button on the flashcard to update its question and answer.
-    - **Delete Flashcard**: Click on the "Delete" button on the flashcard to remove it.
 
 ## Project Structure
 

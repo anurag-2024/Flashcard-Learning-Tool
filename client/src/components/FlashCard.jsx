@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Flashcard.scss';
+import './styles/FlashCard.scss';
 import axios from 'axios';
 import { API_URL } from '../utils/api';
 import { toast } from 'react-toastify';

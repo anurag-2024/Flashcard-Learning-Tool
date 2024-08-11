@@ -21,7 +21,7 @@ const Signup = () => {
         setUser({ ...user, [e.target.name]: e.target.value });
     }
     const checkPassword = () => {
-        if (user.password === user.confirmPassword) return true;
+        if (user?.password === user?.confirmPassword) return true;
         else return false;
     }
     const handleSubmit = (e) => {
@@ -31,17 +31,17 @@ const Signup = () => {
             try {
                 axios.post(`${API_URL}/user/register`, user)
                     .then((res) => {
-                        toast.success(res.data.message);
+                        toast.success(res?.data?.message);
                         setTimeout(() => {
                             navigate('/signin');
                         }, 1200);
                     })
                     .catch((err) => {
-                        toast.error(err.response.data.message);
+                        toast.error(err?.response?.data?.message);
                     })
             }
             catch (err) {
-                toast.error(err.response.data.message);
+                toast.error(err?.response?.data?.message);
             }
         }
         else{

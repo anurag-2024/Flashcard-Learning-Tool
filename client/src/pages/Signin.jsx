@@ -19,9 +19,9 @@ const Signin = () => {
         try {
             axios.post(`${API_URL}/user/login`, user)
                 .then((res) => {
-                    localStorage.setItem('token',res.data.token);
-                    const user=jwtDecode(res.data.token);
-                    toast.success(res.data.message);
+                    localStorage.setItem('token',res?.data?.token);
+                    const user=jwtDecode(res?.data?.token);
+                    toast.success(res?.data?.message);
                     if(user.role==='admin'){
                         navigate('/admin');
                     }
@@ -30,11 +30,11 @@ const Signin = () => {
                     }
                 })
                 .catch((err) => {
-                    toast.error(err.response.data.message);
+                    toast.error(err?.response?.data?.message);
                 })
         }
         catch (err) {
-            toast.error(err.response.data.message);
+            toast.error(err?.response?.data?.message);
         }
     }
     return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Flashcard from './FlashCard';
-import './styles/FlashcardList.scss';
+import './styles/FlashCardList.scss';
 
 const FlashcardList = ({ flashcards ,role,showForm,setEditForm,setindex,setAnswer,setQuestion}) => {
   const [currentIndex, setCurrentIndex] = useState(0);

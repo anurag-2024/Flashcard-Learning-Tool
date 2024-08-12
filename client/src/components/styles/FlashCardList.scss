@@ -1,3 +1,4 @@
+@import '../../mixins.scss';
 .flashcard-list {
   display: flex;
   justify-content: center;
@@ -5,12 +6,21 @@
   margin: 20px auto;
   max-width: 800px;
   padding: 20px;
+  height: 100%;
+  @include sm{
+    padding: 0px;
+    max-width: fit-content;
+  }
 
   .flashcard-navigation {
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 600px;
+    @include sm{
+      max-width: fit-content;
+      margin: 0 auto;
+    }
 
     .arrow-button {
       background-color: transparent;
@@ -21,6 +31,10 @@
       cursor: pointer;
       margin: 0 20px;
       transition: transform 0.3s, color 0.3s;
+      @include sm{
+        font-size: 24px;
+        margin: 0.5rem;
+      }
 
       &:hover {
         color: #000000; 
@@ -39,6 +53,9 @@
       display: flex;
       justify-content: center;
       flex: 1;
+      @include sm{
+        max-width: 300px;
+      }
     }
   }
 }

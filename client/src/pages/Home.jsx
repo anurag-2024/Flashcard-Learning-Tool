@@ -9,6 +9,7 @@ const Home = () => {
 
   const [flashcards, setFlashcards] = useState([]);
   const [user, setUser] = useState();
+  const [index, setIndex] = useState(0);
   useEffect(() => {
     if(localStorage.getItem('token') === null) {
       window.location.href = '/signin'; 
@@ -45,6 +46,8 @@ const Home = () => {
         <FlashcardList 
         flashcards={flashcards}
         role="user"
+        index={index}
+        setindex={setIndex}
          />
       </div>
 

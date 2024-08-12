@@ -6,9 +6,9 @@
   perspective: 150rem;
   position: relative;
   margin: 10rem 2rem;
-
-  @include md {
-    width: 45%;
+  @include sm {
+    width: 100%;
+    margin: 10rem 0rem;
   }
 
   &__side {
